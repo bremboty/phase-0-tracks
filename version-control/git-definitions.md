@@ -10,3 +10,5 @@ a branch is another version of the source code that you can mess up and destroy 
 a commit is a savepoint.  a good commit message is in present tense, is short, specific and descriptive.
 * What is a merge conflict?
 merge conflict happens when code doesn't match and the computer doesn't know what is correct and asks this to be resolved manually.
+
+SMALL CHANGE!
