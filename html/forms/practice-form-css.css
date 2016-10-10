@@ -1,0 +1,16 @@
+.fieldset {
+	border-width: 15px;
+	border-color: pink;
+}
+
+.div {
+	border-width: 10px;
+	border-color: green;
+
+}
+
+body {
+	font-family: Comic Sans MS;
+	
+
+}
