@@ -49,6 +49,27 @@ until variable == number_of_employees
 		wants_insurance = false
 	end
 
+	puts "I'm going to ask you to list all of your allergies one at a time. After typing each allergy press enter.  When you are done type done.  Okay give me an allergy."
+	allergy = gets.chomp.to_s
+
+
+	if allergy == "done"
+		puts "Good for you, no allergies"
+	elsif allergy == "sunshine"
+		puts "Probably a Vampire"
+	else 
+		until (allergy == "done" or allergy == "sunshine")
+			puts "Give me another allergy or type done if you're out"
+			allergy = gets.chomp.to_s
+			if allergy == "done"
+				break
+			elsif allergy == "sunshine"
+				puts "Probably a Vampire"
+			end
+		end
+	end
+
+
 
 
 	if (name == "Drake Cula" or name == "Tu Fang")
@@ -66,3 +87,5 @@ until variable == number_of_employees
 	variable += 1 
 	
 end
+
+puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
