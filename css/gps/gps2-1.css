@@ -1,1 +1,21 @@
-h
+.column-1 {
+  width: 50%;
+  float: left;
+ 
+}
+
+.column-2 {
+
+  width: 50%;
+  float: right;
+
+}
+
+.wrapper {
+	overflow: auto;
+}
+
+body {
+	font-family: "Comic Sans MS";
+	background: url(http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg);
+}
