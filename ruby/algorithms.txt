@@ -1,0 +1,25 @@
+Approach elevator
+Until door opens
+If you want to go to a floor with a higher numerical designation, press the button with a triangle with a point pointing up.
+If you want to go to a floor with a lower numerical designation, press the button with a triangle with a point pointing down.
+enter elevator
+until door shuts
+press button with number matching desired numerical floor designation once every three seconds.
+after door shuts wait until door reopens
+exit the elevator
+
+
+
+Jogging
+
+- Wait until it is 07:00:00 (7 am)
+- Move forward until a wall is reached
+- Move left along wall until front door is reached
+- Move through the door and away from house in direction A
+- Set "seconds remaining" count to 900
+- Every time a second passes
+	Subtract 1 from the "seconds remaining" count.
+- when "seconds remaining" is equal to 0
+	move in opposite direction of direction A
+keep moving until door is reached.
+
