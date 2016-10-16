@@ -65,8 +65,40 @@ def name_coder(str)
 end
 
 # takes all the spys in the array and runs their names through the name_coder then prints a neat list of the results
-new_spy_name_array = spys.map do |spy| p name_coder(spy) end
+new_spy_name_array = spys.map do |spy| name_coder(spy) end
 
-p name_coder("tyler levad")
-new_spy_name_array
+
+alias_list = []
+name_list = []
+# User interface
+
+p "Hello welcome to the name encoder program!  Please give us a name to encode (all lowcase, first and last name please."
+input = gets.chomp
+name_list << input
+alias_list << name_coder(input)
+
+until input == "quit"
+p "Your new name is #{name_coder(input)}!  Give me another name or hit quit to end."
+input = gets.chomp
+name_list << input
+alias_list << name_coder(input)
+end
+
+p "thank you for using this AWESOME program"
+
+p 'the alias list is:' 
+p alias_list.join("  --  ")
+p 'the original name list is:'
+p name_list.join("  --  ")
+
+
+# Use a data structure to store the fake names as they are entered. 
+# When the user exits the program, iterate through the data structure and 
+# print all of the data the user entered. A sentence like "Vussit Gimodoe is 
+# actually Felicia Torres" or "Felicia Torres is also known as Vussit Gimodoe" 
+# for each agent is fine.
+
+
+
+
 
