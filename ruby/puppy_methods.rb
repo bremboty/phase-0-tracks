@@ -1,3 +1,5 @@
+# driver code
+
 class Puppy
 
   def fetch(toy)
@@ -7,3 +9,8 @@ class Puppy
 
 end
 
+iroh = Puppy.new
+iroh.fetch("stick")
+
+
+# User Interface
