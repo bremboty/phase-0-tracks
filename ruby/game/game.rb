@@ -9,35 +9,7 @@ One user can enter a word (or phrase, if you would like your game to support tha
 user attempts to guess the word.
 Guesses are limited, and the number of guesses available is related to the length of the word.
 Repeated guesses do not count against the user.
-
-The guessing player receives continual feedback on the current state of the word. So if the secret 
-word is "unicorn", the user will start out seeing something like "_ _ _ _ _ _ _", which would 
-become "_ _ _ c _ _ _" after the user enters a guess of "c".
 =end
-secret_word = 'unicorn'
-
-array = secret_word.split('')
-
-p 'enter a letter'
-guess = gets.chomp.to_s
-
-	i = 0 
-	new_arr = []
-	until i >= array.length	
-		if guess == array[i]
-			new_arr << array[i]
-		else guess != array[i]
-			new_arr << "."
-		end
-		i += 1 
-		
-	end
-	p new_arr
-	new_arr.each do |letter|
-
-
-
-
 
 #define a class called word game
 class WordGame
@@ -86,6 +58,37 @@ class WordGame
 	#boos if guess wrong or out of guesses
 
 end
+
+=begin
+The guessing player receives continual feedback on the current state of the word. So if the secret 
+word is "unicorn", the user will start out seeing something like "_ _ _ _ _ _ _", which would 
+become "_ _ _ c _ _ _" after the user enters a guess of "c".
+=end
+secret_word = 'unicorn'
+
+array = secret_word.split('')
+
+p 'enter a letter'
+guess = gets.chomp.to_s
+
+	i = 0 
+	new_arr = []
+	until i >= array.length	
+		if guess == array[i]
+			new_arr << array[i]
+		else guess != array[i]
+			new_arr << "."
+		end
+		i += 1 
+		
+	end
+	p new_arr
+	new_arr.each do |letter|
+
+
+
+
+
 
 # USER INTERFACE
 
